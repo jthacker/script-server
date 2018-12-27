@@ -28,7 +28,8 @@ script:
 before_deploy:
 - git config --local user.name 'bugy'
 - git config --local user.email 'buggygm@gmail.com'
-- git tag -d 'dev' || git tag 'dev'
+- git tag -d 'dev'
+- git tag 'dev'
 deploy:
   provider: releases
   name: dev
